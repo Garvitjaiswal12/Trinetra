@@ -1,0 +1,686 @@
+wallet,graph_suspicion_score,n_patterns_matched,matched_patterns,reasons
+bc1qb976794eb9c4236277ad1bfe8af5256ab07edf,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q5c6c7b4c9af8618370cc97772ba76522f076ed,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q2417b32b5d371fdd7a926b88d92f7be6cd4e8d,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1qf36c233396e9edff60c111bc96a53521cfce8b,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qb0a523eb262bffc77905fe832e1df827152726,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 17 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q6e75790792e0127b40af4a59a083f251cd474a,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q8633e09ab7b3ffdc1c1c4ce741b41205f5e16c,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q0cb67e198aabc9d60c4a31a2b723d3213f9a51,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q6dbde21391d72e348923bba2c9cd91acda37bb,80,2,"fan_in_consolidation, peeling_chain",fan_in_consolidation: 12 distinct wallets funneled in within 72h; peeling_chain: part of a 6-hop wallet chain
+bc1qb3e894d5a6c055cc276a9bb0e7fac4bf80b671,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q08c08a87458b0faa366707a43d256ce7e1f765,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1qdeee2ecd36a6ea8ff6ae94cf942f5ff9c0962b,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q13af64e749350fc2369edf6f87ade3441b258b,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 17 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qf554c47eae8c072ee902ac59555664f1e7b9df,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q5d213f9c44e86f80c1317a4404365ae5885d6b,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qee828d16bef957f35c6168344bf6e622ac2663,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q096990c688ee11b05464f359774853fde89c38,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qa55c58beb47b68155f76157cc3af4f4fee3b4b,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q343cb54ffb14fd093afe2bcd2fcb0969f3cd3a,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qe09032317e288d1d603c07c8b9f245b072a428,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1qebb0f017909c2953d7806aa9b2fa58b158d725,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qbeecb3104b7766bf32940c0f2a89cace13efb1,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q59ecdd3448f15b7657800ae78db62ab049832c,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qdf742e7662e7072d8f1219f79a72d931797fa6,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q1cc1c336597fb054fb1f658a591a4009730555,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q8f0d789f2cbfb1e3e120b44f0256f714063a20,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q8d482cd415f3b7a779e913ec574f4e2a06792f,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qb9645cf22854d9636ef9c66944efb268fe01a4,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q906daa80c5ecc879346c1adf0526aaf1c16df8,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q8e6fac8061fdd4075973110d9801d57dcafba3,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qc068525e9669607f61b7699445d974b539a27a,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q76d218d0eb25690ff9ada8f120415349cca601,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qd53c28430755625f4fa8c8414169556391edd4,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q31386bf0f1b961e9c34cdb8340f67e09f8c302,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1qe946e5fc5f33855ef49674d6d6745326af8085,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1qe57e120702d6fb35aa57a30cbbd373d7c9b273,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qf8a740691ed6c6fdb6de398a8d9f330e93cda9,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q551868586e2ce5ee2362d677e8134091abe643,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 17 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q33ad4b6bd51c708719cc8d9a49e591a808d060,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1qa194a302e8f77e0b9f65207a5c66a2a60620ba,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qd4690244254e82b37c775d871c7baafa3af0db,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q465a9b983d846842b852a3ce33faf4be5500f8,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q55f17a1f48cd648dadcf662113495aff9aa6b7,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q1ea48cf652f15a55417181143bd60a230bc8fa,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q7f2bc69905966ff72f6018611c46e2af655277,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 17 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qb76f55d9c21ab00716aafc01f8f071e3eadf60,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qf2beb368e9bab1ee42a4bb7609523269ee2a38,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qf6004956addcf4050b6902243255b3afd09dd6,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q302d5bb655412b2b9a97bfaa60a7d7972fe903,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 17 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q2172fab18b0a4a0fbcb9a5fbf2d5fe56a8df74,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q2407214eeac7aad82f0e764bd96eea9ec98f69,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q4bc663b1a01dd7eb658c4c61b18f25c4cccb53,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1qf45ddd927e9c591002a052f7fc22020290b45b,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qf5a7d74138d78733de1ff8dddf500fb07d1939,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 17 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q8a0b311549c5151a3a91f4b8a3c83f97328cfd,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1qdd9573a8cd5b5cf27277870a30a52c2331f122,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q8da92798609ff14fe02243f50b7d727290cd41,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q79e45a6dae8f62ea7d104200bbe04d3dc4fb27,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q7d1621c07085c693b475248e758f43a47c9533,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q380f810abb26dad104d7b1f37c2edd7e198c06,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q718ced2b84ab4a1111061b3bdbe1367658a1c3,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q1137554fbeb7a621962f1ff29aea53fd8ccf22,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q3a25d3e517b621cdb4f6cf94e4495ba85b0c5b,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q8005ac8a83c0c4d5e81078e11baf0bb81e9919,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q22abca3afd602144fc4a2426b79a0dc5dd2b74,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q5ef00d624cc8de0b14dc7733532a242cef2aa8,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q604a80b46cf80e139ff86d401a0adf4df8b824,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qedfc4da31a59b2d5d544ff9cec65b4b452343f,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q16f478d04d4ff57ca143e5847346379b873702,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q43a32ade3c9f3c6268de39429731f8d2f31b80,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 17 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qb2fa5eb06d16531d1a380518921d45faaa33f3,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q364604237f976cc3ef1cd4b667d11086f23d33,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 17 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qa8ae1f7e3a86f8ab820a0e028a60aa657d79ff,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q674524f138663553d6c485f98c6f229834eb32,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qc5cc3e798f66497ad9ea7d2d56fe84d9a29bb2,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q85757d6860a3ff8f7bc75d4362a51997f6fb60,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q4d10c13903c115b4d8911f37834d89126b5fe7,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qd3f0fa5c5960775d6f5d05761b5dc10bb9bef6,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q3bd3bb1a5af11b2a61eebc4acc6e18bca034d6,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q1ad65a03a77e5eecf58460c3232391dc883201,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q00b5c56179133e8c4e16dee5856e44809ca354,80,2,"fan_out_structuring, ip_cycling",fan_out_structuring: 8 outgoing transactions within 6h; ip_cycling: broadcast from 8 distinct IPs within 2h
+bc1qa1027f10d49431365dd72804a082abcba86c23,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q13c555618886f91ebb406618f0f286e6909926,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q581a02c8ee513eb17b7c42292b1a75e897fc50,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qe35f45878d11e52a77c6b2aca76a53ec503e04,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qf5410681184691086fa0e98898be23fca1aea2,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qdbbf5791de81a898bb872673ee6249aac7a9aa,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qa3050fa41e83c86d6bac41fa1d11abec48cef4,80,2,"fan_out_structuring, ip_cycling",fan_out_structuring: 8 outgoing transactions within 6h; ip_cycling: broadcast from 8 distinct IPs within 2h
+bc1q42a189e43ae4ca9381f4926351953ee7bcd0d7,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q952f5b9a634cb69c641e1924eb254a4455602a,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q4863818316432c0871d62ac897f327df96c8da,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q19e8c0d019f1c4aca52684bc5a87c701d78398,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q11d2e6da1cb8f8973a839e144dacff59d16288,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q10a5874c3629ab0ef5e6562ecd5c63148dce10,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qe639406cf3de1cf9e0ee0e3f6ec4427a2bffef,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qa0b94a53f4c1b9fcc5e32e6eabf474cade6d08,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qb69c4709ef6fec9b3a3d7023dba70c1c386519,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qd670b15362aa97ea823151b4f2abd5bae33a5d,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q6b2f3d4e48f6d948be125754d3b395e004c761,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q838ec5ee01e4ec5e2fc30fb556fa463d06d108,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q3a2ad0bd73f7145b0247d05450af729ce9f298,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q0e09eefe6bb800e97cdc9c0917ee59d615dc6b,80,2,"fan_out_structuring, ip_cycling",fan_out_structuring: 10 outgoing transactions within 6h; ip_cycling: broadcast from 10 distinct IPs within 2h
+bc1q79260be4e9a14c4e285b032ba4e3125a5f8c04,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 14 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qabc96202288895b8dc219fea4c9352d0974f25,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q0e6f0dbe36df62441b5584d6e11d70e6504319,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 16 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q28fc7d093be8bdae94ccda6c553b3d40f396ce,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q25a0ccb5091ee74a4c6b417a3856f758f0c971,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 12 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1qaf0ca432c29bbddbb05d2b2578ecc717693f51,80,2,"fan_in_consolidation, mixing",fan_in_consolidation: 13 distinct wallets funneled in within 72h; mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q56acefbb27ed91a6c5f1385b68de7b51666f73,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q7cfce9519200ca40eaecca495641cf4edb76fb,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q21a5289ef29c76759d9bab46a0fdeb5d87e18c,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q252ee02cbdfa3d797d20f7d650ae8eb437bd07,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q7f2b4375cf90672260c8daf7a0f53fca483706,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q9e60977f60ce6cbbc2931eb93c89971fdbdb6e,40,1,fan_in_consolidation,fan_in_consolidation: 10 distinct wallets funneled in within 72h
+bc1qb713197203233e638a7d785c3f0a39a6f27aed,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q96ed6b996dc9b9947f30eafb514f85fb02fb57,40,1,fan_in_consolidation,fan_in_consolidation: 12 distinct wallets funneled in within 72h
+bc1qdb67275335a0e140e14bc037040f59cf3d0059,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q7a287d9f3ed432daf7abc5c890efbf280fe5f7,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q4239b192769c71821bf489a84407d317b50195,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qcbb68120ca5b95bd258aa18948e6eec307c5c5,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qce6186eb40f87df0a5570439147669dba45816,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qf0e714fd83cb4e7ecb42120e68534cec075e01,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q8e2d304a9d9c8937116bbf953e5393f8760a8a,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q6685dd8c79ec13c4e96179e50854fc128d489d,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q2912e2995b5ac1d43083f6aa4fba988bf26c62,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qff8fb3ea912048017f54e6663fd91675900672,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q724313e51a30d8906037b8a4bc53238be66eba,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qa4a7984a40b99133f9b0293ec47a4936ff2ec2,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q25ffbf45d0156a692078cbf4df224e8b2d20e3,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q64aed6c8e75de86687b0204d8f7643ee2544cd,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q0a75be4052278ef279ce516e168fd2b4cdbaac,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q91af4ca93a31b1fb522f9409de8c62cc07e5ca,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q7118ffcc01b9316baaa47559b8f57801048294,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q507a70e5ec96c498dd817880f537b6e9457988,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q610ebfe211057d4350b3c73f3983156a48c58f,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q9b3d76260f28931dbdadc427dba9155bf2b7fa,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q1bafc75db1d761577a50c476e8dfa159201ac8,40,1,ip_cycling,ip_cycling: broadcast from 6 distinct IPs within 2h
+bc1qb69c46ffc97c564f46d8e7471df26f5e6c52cf,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q696e3ba37c8a7a2d8263775fa5d163545b600d,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1q15d9f80ef7e3d48045bb3ee3a7ab79b32a17de,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qabed528e1ab6300a969a0d4f91e10a7da96da9,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q0788cfb7aa82a981274e8fd3b6e35c176a5e22,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q42d4104d1c2fb6c55be8c75c52f1b5399fa4e3,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q3b5af0f1e6e49b8449e5a1645219e1e5b2391d,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q6d4fefc8f618b22634f29612b4c43a0749bd55,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q295d649bd6c81324265f15f005de1c39731a7b,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qb749020f7dd9f424dfb1965cc63054f83e3b60,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q0ad8593bd9e55ee01b2097b7b873567dfd18c9,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q1e424b6661d58c3b546ee2e4df7aa9f576a65d,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qaec1cfc7157e96fc5f5465c454d86a577d827e,40,1,fan_in_consolidation,fan_in_consolidation: 10 distinct wallets funneled in within 72h
+bc1q6b66288bcce1e8afb9d7da2c157240a3809f92,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qc86ea70098528d27ea0ecb6f166be17f09baa5,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1qc3d766a8efbb71af84523f141f1f8d7e39f4eb,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q002f93991265c1be3f1e5675ba8114f7ba33d4,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q862bd15d7127bfff4657a76547092c61c1452d,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1qcf41eb8a919f83528b49b02503dfb91dd87464,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qed714a3a5c055787e288b13ad6bee5c68eb194,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q70e1218a1dabbd2f855625247468b4290efd0d,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qf3fb35b8a1b4c3c490444a80fbbbeaa241e59b,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q6b87e79333d9d14cb222910a93bd4238bb68d2,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qa7a97f02441e1942442ba4a6b6c94eb6418511,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1q60d714a114edfd38b943fdd66631fe9072e48c,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qc307b699a468d20261d8886e6ac8a79b71ea3c,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q26f8cf496c0adfc826d28592bcf38eae3f9d85,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q19038f364a930385906dceb303f762882d7515,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q9d068813d6d1e08de31aa97b403c44fb51c4f2,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q4abf355f0e2746ed6a34615ed6b67d10642181,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q9215950ce8e6a8460823960b71f2a810f4aec7,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qd45bb671537d6c2f60a22dc7156a873ee90858,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qbc8cd915305e662d19fb9442e407fd920cfc7c,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q811137cb93f5712ff20d480c42ef37d9602765,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1qea2c9429da2f3e7084a91e1ff2d513dc3979af,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1qf6ea0aeaae10acab09c25ebc5a2b768848728b,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q6a1b98e9b9dea880f2ac3e04c42e74ab998b57,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q6f402bb6c9849535f756944b7773358c19bb66,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qc32f5eae44237f6e0e4050a1ef76db285c9245,40,1,fan_in_consolidation,fan_in_consolidation: 20 distinct wallets funneled in within 72h
+bc1q620bd53fc8142f8aed5e4520c1ea502e93e4e6,40,1,ip_cycling,ip_cycling: broadcast from 5 distinct IPs within 2h
+bc1qb50b44e60d527b04d49c222200f89de25395d4,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q964cb99be1032755977fb80dd9798b7dba8e20,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1q51138449d1d2e37bb9da050ba25db33a6124fd,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qe36358387320f00362920b132084e899128903,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q604c797a39f0bc76fd495fdefe5d82e82d134b,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qcefda786af04d33b0d5e1766a5f6b471cf9326,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qaeac0852892f596e03664a891a461e42ce5630,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q2734f5dd57f69dae970fcd21ce00dbc868cb29,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1q9263195670eaaac1c7fe48ed6946856344aaaa,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q09dfd9b1dd96ebac57ddf54c049c46ad825c4e,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q7b9518b36e1def624000c3f528f83dfd894f4f,40,1,ip_cycling,ip_cycling: broadcast from 4 distinct IPs within 2h
+bc1q3eb6be2632be2079add516a60d2be56aecd708,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qe2ca11cdef3e68132145ee6d7e9e5353cd5cf8,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q071fc5adacb8ff0c63aba85f160f4dc2ae3f96,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q2a0937ee45c3d0825012dbba6def7ba6abb3be,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1qf29cba0df2d5eb84ab6ee13c24470c54606548,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qe2caa80ba05ec8f58b82979b19a616d9b9ee50,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q083290e23b9bdf809f054faf9e5e0e25fdd9fa,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q67cdc8576d60dca39249c3f91059e1f36039fe,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q02edb6b43f2f5d096e338e5bafedc0a2a9e8d1,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1q6466921223f9cf5cd409830e3b8b2f36efbfb4,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q1addffff9d2cb242a5df0437a16903572b39f1,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q5387900d2339dbb4abf087d4e29bf16be2f4ca,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q446014d6e2e3c71568a5031a46eabdc8eed77a,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q3902660fa9bfcdd341dd2b807c498e76210459,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qc193b55a847ec9499fbd89a0dfb2366d48db03,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q47574c4bdce1220aacfd5c8c7d7356d052d566,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qcf0ac57d5d569fa5d70cf6b33bb8a99eeac8d5,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qe35dc37d05507224ef409f5284817b0c4c4091,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7283a9c79cac4f8f0eb62b03ac929e3cb0bc0a,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qe3df304d6d61c1af8cf832ca37ef9a1a7301e5,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q39d7a8b398173b863c5cae87857eaaa9ae18b6,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q43f9613a1193b88cb6bfc986ec5f54940cff4f,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q876d2680c737198dcd90f1362dc36d413236b3,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7988e1d4c5da183c9e2b3d6c6f85645a74e38a,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q70198831c33a0712279b80f203214e839ceb48,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1qf061dbe866ef5ab482e14652c1130a7bd03112,40,1,ip_cycling,ip_cycling: broadcast from 7 distinct IPs within 2h
+bc1q50c6247382ff2e318d983d77852aae0e9f1e86,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q129fe82ba066a74f4a7412e5c7ca55d8c21413,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q3e77436f458c718d9bb49cb96d5206c55cf038,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q3182085d99e45348af8c4658c22b33e587902d,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q34b30186187c293d023da7dee79e9747e84378,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q201d5e33e2838d25f493d9dcc6eb426c184866,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q136fd4660d7c45cc927607c5327d32c24853af,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qf77d010753447a8c1b54f20fe1b56af7811b8a,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qaa18c20eae616fb826eb61325b89bdfd4ff98f,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q1db9bbfd4d5dace8fe02a2499984bdaf13a369,40,1,fan_out_structuring,fan_out_structuring: 13 outgoing transactions within 6h
+bc1qb4d1d257f8273b6d952d96f5aa5d7487a76e49,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q9e5cd52fc6fb472864836786f79593c99b32d0,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qc2d8d050d328aea5c91422f28a8585b8df94ff,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qbd3637c84cccc4487d77d98f59c355e08e1178,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q82ff354168678837a44b3b5ae47d44f3d69408,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q1bf564bce41eec69036477c2b855c676dff9de,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q3f10368aada9a3dc6216f284bb24e351ec6937,40,1,ip_cycling,ip_cycling: broadcast from 5 distinct IPs within 2h
+bc1q46b92221cce74896c39ae092eb77e15e5a3ab2,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qe5c0154b205ff985180e524f828e5923e9a394,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q95cdb87204d38a2ebafefe73f1ab2c8a3d33cc,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q720f250c3d8c553acd503188a486ff72f8cfcd,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q0e5353c199ba05f21e945c1a93f761388b6821,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q77db2bbe317bed3720a49bd3e49adee7abf029,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q9de56705b75a7827f2a1f74896ddd66a88b24a,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1qf5f8fe8a109744db54e125a08c056498c8ae9c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q4439e1f08884935c8bca9c697b1b302cc98466,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q5cc41500db5bc14a4dc90ff0bb7f714db5a933,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1qee5a1d961ebe64598022bd1555b5422372222b,40,1,fan_in_consolidation,fan_in_consolidation: 11 distinct wallets funneled in within 72h
+bc1q3f26164fd90bc5286af5765340e84c4a656cee,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q2c6876fd0dec2190de53b3050f5190b68bbe9c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q84369b0c2922c78a51dc34210b81d2dd5df522,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qe18e6ead4998cd774c7d86be2ee8f8ec21489b,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qc131d92023fac696cf71d20038a243ba11b317,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q7bd018d4a81b6b353caf773ec334a16da41061,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q955e9cf5e03edb417e96b1ae416ded44227ad2,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q23bb8920d58387961450536d1cda20438cb347,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q9519491d736c0fbbaba792d91cf1ca706be042,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qd828f44fad587c0b0793423987395b60f508b1,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qf0669e80fe369bfceb5d21fac0c59da00014db,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qdc859c69ebb9389f487cb3f4c27baa07540af7,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1qcaf27e7b763e78992d6aaf014028494bd9db0b,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1q4e565310790b640d99d73e9ecae20e4f3b8005,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qbd4c7d344af089757b00d75e48b032c5415c65,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1qfe06f267a095326f0eb592fb4181f0653e9e29,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q3ce090f878e7b893186fb5ee20f1f169fc0a90,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1q3ea0eb6b8b1696c890d734075b3601e933984b,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q9d9bfa57e5b7f8c344d2ce6cb1ba001335c995,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q0a8696b9b1aff21fbf74073f441252164c88eb,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qd71d17fd73a7f1a9f4b37bd3eaffe084ed518e,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q51617d10471405d0f1b28535d8fd459b5b95e8,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q25848c242bb404c4e8a6913c2e4470608ceacb,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q9bd182fd87bf592d34ce5d01c244a8db19e12d,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qdc2c72656a6b84d1c9261da6605ef0883d952f,40,1,fan_out_structuring,fan_out_structuring: 20 outgoing transactions within 6h
+bc1qb25dafd5e9b65483969698c214832171625268,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q869c9206a446ba2d05a6c17700d1c916e41c50,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q8cef232b888b87fc7dbd0999e594e551106aaf,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q58ae32dc329b02dd2f4bd2d00da67269270b22,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q1af7590668feac5b0565f8869d9c4e4024a503,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q231495b56980cad78f046c52e709c4182e3ddc,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qb51213fd2101fbca0f75c15e467789be84a168,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1qd35a3d0581578442c6a3cb2a84a8dba1c545df,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qd86529c705137258fb89c92906da3006622b12,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q13e59e8c228e185d8d0381f7a09c79274abe5e,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qe8c8610ee5f4d1113adac594ebe211b706e5cd,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q02f8316992898d24dad8fb3c62dbfbb2128c3b,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qbd766eae184c134f5c887a53bd0018c139f737,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q245bb98d6f85676ea1152de46fe2a9c0d30d08,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q57dd55f2df54133f758739e68de965aa5ec68f,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qdf38419e36d4192f49851e6e6b793f2a1f6961,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qcfaa7ea0cd7c30b28c350a741d8fb08634abfc,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q156c799563d9a7122637a0ac0e7146004ddbe5,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q2dbf5dd82f4796f86063086380ddf24a887b50,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q71f9ad4506e269a5f397c8e732267f3f42c6d5,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q535a1527e55fdb0ad70b3183276eb0b2effe0b,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q28ed94405f791fa420a1f649bff211b2729762,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qc803150634fe3ec9668656c1615cdbef0f1f68,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q88d255e5ac782650927f93fa111660a1493b97,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1qa45ce9e836890048223aca617d720c1326907b,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q321fdce494b0578eb469dde48f51e39de7ecf7,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1qd9d1932e24a79fabdb6840ac5671b2e7d50f6c,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1qd9856d6f4ce84550641793b79570c024b71cf1,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qbf00bf6f4e0ef65f4d020482687955671ddff7,40,1,fan_out_structuring,fan_out_structuring: 24 outgoing transactions within 6h
+bc1qf4bf7858cca4a745253fe95423054502ffe53a,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qee812dcdf99516bd77852393e03a3a1ddaad0c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q5b6ff2f088f041ba3b0c3d61a7a7914f0b1f0b,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qdec628ffeb7f6c39cdd613db815edbf1a941ef,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qa3762b28777a1cf7f6f4b07d9e6355de6fab44,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qa69d26aba104776455623cd519a556e4ac58bf,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qc12ea9418259947bfc8da36c6dbca48a2ce469,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qbf591266561aa3c98930223ecd551ef7ed8f15,40,1,fan_out_structuring,fan_out_structuring: 22 outgoing transactions within 6h
+bc1q33f1da1a86f5b9f33a9bad562f80a8e82911e3,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q9c48b67bd7d53eb86d59482341be7100fa52b3,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qca52caea17058584ff9ffbcc600fc10a211664,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1qa630555818c1b748506ad7bcdfe1b11617043d,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q3724a7a6f60661824cbe4b04d8d39027296a2b,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q469b3ce69e7c8465867f7a5c0eacb997c370bd,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q5df0dd808b491d191142e677d3454cb8e56eaa,40,1,fan_in_consolidation,fan_in_consolidation: 21 distinct wallets funneled in within 72h
+bc1q1ec9354ad55e4b5909d388bafda93dc5b1bd1e,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q16ad974c27a7fb5e9373319ab3d5b65fb9b8c1,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qbff36447749de09c25291fc272821823685517,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1qf1f30b0343f73a94d66982b84bce6f2df0fb61,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q8cc1e6ab80e4c85fb5fb052b0a67ce78b56047,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q4657733db2c59bb3af923983f38ef26cfbf451,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q73dacf3b21bb8b7c7ad6b52b07b6e4e6edde98,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qc2aba3b1281b23fce919ba8e46c7b2a0b1275f,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q57c69d27a275974357f0da02afdb4e0f578397,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q12335bd67e33553f5862eca6c65c0123f45482,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1q97cec05e14be6425f3970e434a8f40e0c07476,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qd3a3b7e540c401dfde40bb080e5f445d9eaa75,40,1,ip_cycling,ip_cycling: broadcast from 6 distinct IPs within 2h
+bc1qd5cf8f3b3f0039bd5eb8a51f2e60a2600a5715,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1qc93f2f803930d1285cf187b98e6215cf9b993d,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qc03fe32d72f1a2212d81465dbda3a073d7aa41,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q3e1b846324950d2bdef4bbf434839ce3cbaa64,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q32b32e3a1d36f78e722045fda9d3865a27e074,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qcdf56542f2b3966aa0cc5e7e797247938984be,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qf5a15d40fb6449b1a8db81211911b0e9dead12,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qa673e47b72451312fd1b629eee400118faf36e,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qfa7950eeff83cceccfc0785f93e6190cffca8c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q4f85ef43fba33dd4cef3b5ed2b0abf85fa1425,40,1,fan_in_consolidation,fan_in_consolidation: 10 distinct wallets funneled in within 72h
+bc1q74c5c1b115fed021012fb942976c0b6851cef2,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q11217c4b28f40da985f06e4f0d8e8e34fdda58,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q92331dcaa80efd84512ee2da7c433e6d684c36,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q1f0e298a91317b32c47a8ae2490dfdc4dda1a4,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q4157c1e90d5ab7edb544f640b64565b6e7e8f4,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q2270d064655063374b05cfe75fd8f10821eedc,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qfc8467fda0499d31d50c6ea1d8a07242037a8d,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qd94eb05090a45173007b54fcf8732efc3d0df7,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q2d50d72c510fe196c5bd28da63251a1ab977d9,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q2cb56bf9ea84360798affdfe41624894d29f91,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qe0284a2346000fd0a816738d4732536fe72629,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qbd441ed5d9f4edb77be3fecdc70f92a0ac5416,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1qd8fb1c356c83102debb52ce1a556f40a5cd414,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q2b52ebc8d7720859c4b6b888b87cb2a590fad1,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q326d2cdb9fb0100e1e803c6d8af1cf4e4b005c,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q0946146e5578930d1e22e05fb622e538abe237,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1qc0b28664ed5d6d3a8e3c2489ac3513ac79db70,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q70b0419ff35b138b3dcc5ee80b062d39d01016,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q3279e0db9a7a94ce7c6c31d138a010d1470307,40,1,fan_in_consolidation,fan_in_consolidation: 22 distinct wallets funneled in within 72h
+bc1q9c1018792f22fd70a68010b11b25e59d412058,40,1,fan_in_consolidation,fan_in_consolidation: 30 distinct wallets funneled in within 72h
+bc1q329c5cb6174a1744f90804b86478a1e8f9bdb3,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q2913099e89917d1c9fd3488d6873ebce95ae3d,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1qa3242365798433fc3ffdf3a53e9d5c06149933,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q13942f15ce3a4cc8cbfa510cb126fd3d6a09bf,40,1,fan_in_consolidation,fan_in_consolidation: 10 distinct wallets funneled in within 72h
+bc1qbc9e977f4513828e5269d3bae4b20c729248f1,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q2a59f1a2bb335d05b764b95617d5daf64eb042,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q44133297e5bf000ba6e8748b792943d185c95e,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q3a0454661b8e8da80feb6749f5bb0fc67cb4e9,40,1,fan_out_structuring,fan_out_structuring: 11 outgoing transactions within 6h
+bc1qb162c0fee50470f7c68727d4099c05cb49ad93,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qa62b658c01a49ab209307ef27fe283c579828b,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q906b1ffd9f054a5270f06bf68122994ff3e44a,40,1,fan_in_consolidation,fan_in_consolidation: 11 distinct wallets funneled in within 72h
+bc1q4656a19400b65687fac9c4bdca0f727eddd5c3,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q1f4c3d0bc1dc38c76fed7143f686184a4ea76a,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q17660db1623c4dccea568437dd08a20ef889b0,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q32cfebb3c1a0f2f6c35ff80f677bb6df4ae16a,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q12643760a4329e0be840be96a02c316b43f50c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qfa8511bfe0b70b550d37145ff6c4716134a28a,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1q294d6de208a4e580e8e92c8a12827efde05a84,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qf45c7dca61ba1aaa8e4d5f7d2d9ffe7a1dc294,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q8870917bf1bfc6fde6eecc40801d61a3d7669d,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q0ba9a41b2a4bf643a0fa22cc5671f8a9247f64,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q0ca3daf13bbe83f61febed3429bf32f0ea6c65,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q8a4b64ea3060529d80289175a7fe2daca0ab7e,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1qa8cb96b30c971963a794f4b932e3fe6570cef2,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qc240ea0d930ef9fe005b2f16af0912f51c2ae0,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q525aaa4dfdae1e55fe61ac414f6d272d111635,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q4b0b41a1206dd8776b1728b8894e02dfacf47a,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q38f4508b344417299d5905d35b63bc56038653,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q2fd5de9223173406cfbf3f8de4a643894de6cc,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qc67b29c8df199169f363935979be5ec436d2cc,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1qaae1777d97775a88162ce2e7f608b3e6cd94e0,40,1,ip_cycling,ip_cycling: broadcast from 6 distinct IPs within 2h
+bc1q2c8ea5412740ecebaa73c9bef72fa0e8db7e88,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q9f36fcb365ee2e87bd390f19db9ebdb0aaaa0f,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q17a11634adf148a3aac6ad41f8d1fb12750d0c,40,1,ip_cycling,ip_cycling: broadcast from 5 distinct IPs within 2h
+bc1qda501790f6d61b01559ec5ef77797d25d99a80,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q754d3b0bf021f4bbc93d79036eaad18c410764,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1qf39701a6362c489f4a4abbcbf167534b9f0318,40,1,fan_in_consolidation,fan_in_consolidation: 23 distinct wallets funneled in within 72h
+bc1q17746133d1cb6605da628f48ea3a55b042eab6,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q198f85de60cebadc0f5cb4c4d37e9bad8750ef,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qd37f149acbf23c3a222b5db1c7d717e7eab6dd,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q2cc3e1f68c7ef54c57a55da8021fb1af346e31,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1qab484e37083191127f24170aa191ff1851a658,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7b42ad331fdc505a7dd59e1d5d82795762cd7f,40,1,fan_out_structuring,fan_out_structuring: 14 outgoing transactions within 6h
+bc1q5493bab6db08e3fcecb3dbcaf16d0b6a83bb2c,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qf0c8ef10a695fa09f1c1e01f4843789b8e6a31,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1qd5430005857eda9c312d6029811d605a632a9a,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1qd6faadfbe640ff5daabf0ff0a66b1675f34c60,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q06870babe25a40c585f6203876c0be3f3b5736,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q642922ff9cd908ec92e8eef8fd077fc16143bd,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q0e10ac417062d921fb2e2dd93ed28fe78bfbac,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q4b058f574260494764aa5b789ea0cf4eb91e47,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1qabaee3e5dd571563d86b4817fca7e7e5771078,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q7d5af419b0a5badf6a8296b4921fb5b169cd70,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q69c8209a6fc58bbdcd24fe4ab125c2ff5ce3bb,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q6a64ed33fcaa09091fd518ae12b3b8aa02236e,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1qc453126345589a88f2751121f0695d53a55a3e,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qa2f9b3668f898a5087ba83954b38d6b9f94cda,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q04f9c7101e1506d2b7efa2652befb8e02f37fd,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q4fdc95d55808bc2161daec7a34295842b9f66a,40,1,fan_out_structuring,fan_out_structuring: 12 outgoing transactions within 6h
+bc1q8b78ebd838918d9ce2528d0594f1d1ec9ac6ca,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q73861f5139e8d1a01057bf548067ebd73aaa28,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qa4287b6050ad100e2da891163f142217761cc3,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q5181e7881055c97209a4ad321bae38bab4d211,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q835c34159955994421fb174fd0757fc3bb9a35,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q1e32dc786d142df51a5085ad45c47fb58d094d,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q1f774fed1be99411540beab36740fe66c672d7,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7efa95d9a048ec0c4c5c2c577dfd75472dcf97,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q0899f34cc76c9e0602213397b7bfb5620934ac,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qe7b4fd7b822ff66b87ebb920fa15cd2cbf8a6d,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q0b43911b91c503475b8cccfa437190f63a6cb3,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q70661d66a556f9ffbd77d468a0bffd92f1c722,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q729ea3e91c89a959086641b6361d758cf1e369,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q9ddf1dbd6c99a531c6ef6d3930cdf19e2ca2d1,40,1,fan_in_consolidation,fan_in_consolidation: 17 distinct wallets funneled in within 72h
+bc1q2f58c02095432fec326ebdfc581743026724aa,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qf51d3a50e5dc4fe33d71a6cb721c7cd9c5fd34,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q51caa2471dd4d5ac79e92c6ee9cc3d21d75acf,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q0167a7f3c8ce6352ef50e141a03cd175f11897,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7bb796b77ad59edae7afc8fe57f98c7cd9fcc9,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qd6c07f974d81caa82d31f6d3f96e2f3e261cc4,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qc003e9aec5ca63a2cc87fda8aabd0be60a0a5a,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q66f86417eed61ff60eacbc5f76cd73f304d586,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1qc174ed6071051638e7857566d561948a5217a5,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q4a33ddb282a626fbd4eb2358f0627f91a4db4c,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q1cfeb04b10ecbd04871217dea3ed0e0f854a6f,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qace793ebe36bd7a2751f2bba82c3405f2d9fbf,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qe521bdcb8132c2c4e437b42c641e31284b2f23,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q53b7aea9f9fb9990ed71e1fdb94a9ab5108e58,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1qed95aaa58df70e8db3a6951d74a65319a41fcc,40,1,fan_in_consolidation,fan_in_consolidation: 28 distinct wallets funneled in within 72h
+bc1q71ca4b81cc401a9b2ddb0127db777e24a17814,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qca2fd7ce9a82b8445cdf34cde7f4a2046fc6e4,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q78d42ef1729106d3305aba27274b8972f3828c,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q427ac9fb18305692b910011d074e2ecdb241c7,40,1,fan_in_consolidation,fan_in_consolidation: 26 distinct wallets funneled in within 72h
+bc1q8791e7a39a7577b03338fe0eea1dd8cb3fcbf8,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qbda628ddf027a1c76767ee8b7b7b2c8a40741b,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q67aa76c1596441c4bf2b7cf6cd7e9d10b7ca73,40,1,fan_out_structuring,fan_out_structuring: 13 outgoing transactions within 6h
+bc1qdbb5df17fb91aa53c53317b0865e3f23e469d5,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1qc85410b692f8d39844ea04aec6d9b0d05901f0,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q9e5ff9739d1d9846f92b18809299b5689a6ce6,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q5c61cb25d41e8da0cb996e402adf75eecf17ba,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1q93bc2bf10847b5265ec6a5f3d5d3424469e3b2,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q6dd2385f91734df0b59145db0b4f9c119d5aa4,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q9d62dd83523c4971ae4dde33e5614e6092dbef,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q2dc2a05a8516497b7c518c5f6070609ddddc80,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qa8d3a05da7ca6a6271bfcff4c1f82a2d381ecb,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q1ce1574fd68487c6a5fa3ca9a638b439b9c74d,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1qf60a68260b49e2021d60f82eb923eb39f93e54,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qaed2a7baa08b4e46c5d1530e91ab86fe71787e,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q2de8b800e741f72428b6cdb471ee01a703e820,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q9a03296d414ac2175be90bd7a5ba6ed45dea43,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q4338e8e820083e53a15de6e961dc31ba2db42e,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q348005596bf56dfcaef30063f2e7bb38308af2,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q4fe038fe291bad989dd1074638018fdf6d440a,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q26cf6b9dd901c1310fde5be969db7886541da7,40,1,fan_in_consolidation,fan_in_consolidation: 20 distinct wallets funneled in within 72h
+bc1q58157eb9692118696a316e6defd9e696add4a1,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q539d0aa326286a21c14c4b47db36d4a73d5ede,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1qaed8c1a9554796bd1a950ce72508840030581a,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q89508b44f55343462c93801c32514b0a00f460,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qf8183a2858242d17ce74a2b3fe25db305b9270,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1qead737227bca994c226bbd6f7c96998f9d1820,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q24df8d39f429d7241809e294e1e67d8f53b2ee,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q97cdeb1eaddb530722f8647845873f2488a724,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qcb49e03464cd1d743a1b652b5c671933701dd0,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q223118054f41a69d93f4b39a572e5c4c814792,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q5d73c4ee8f18b94c9b4fd504757b5980005bb3,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q3cc9c3d80bfff449fa24a9b2dbe16b76ef50be,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q49af8ae518a227683ca83a948e15d62de9478b,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q58d8603f0aad633d3cc00514e6835da8aea3f5,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1qf9bd141af518b62f64b424e073fbfac6171970,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qccd697a48f03fb2c9522c406598f2ad9dd0ae7,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q7e6ef7c8c62354e0fbeef21c477277335d76db,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1qf50dfffcc6ad392ff8b4ff4fac587eee1122cb,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qd614709799c158c40968650dac7c3e8889c1fc,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q9dda49214e1e0969466e9c4c34d4b534bff04c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qde1ee4e16f5cfc02524972dcacfa022fbcea7f,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q8d9114ca84dce4db9d0f41c9027393fad93ede,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q5960e340be290b6392d59c86d688475243b595,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q1e7b1caf0681abd953e459ba1a772c83d69167,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qee866ed917c9f6f8e2f330b62d4ea12ee1908a,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qa5dfc4dcd12f269b4996fa83de1a2c72125f8e,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qfe6fbc89292d20bd0ca6d2cfa0fe5c6df887ff,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q072b8f107a6824b483b34fcf6b482b1d0be556,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qfca9bfe6fbc219e18453838dda186e175e3769,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q605b9e70badf8dbeee062ffe992d185aaf387e,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q3aebce97308c4cbdfb95a570ed748d3cdd4033,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q6b2ba37ecba1a19ee9352ae1714d180c17e48b,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q9bad70e4b9847ef917d110213e0722ac947a2d,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q1f826d0fa1dd3a4a032b462eca5e7aeb207f88,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q85cdcb0909817bc472c634fe7253aa806aeb91,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q712995e759cc95b65e075120167e25df9bd148,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q8f15d5cd391cf7fb849ca2577e87544ce9cceb,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q1d60a846790444db88f0a29bb6924504b49bef,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7abad26b0e637a01bf09534fab78743035f0ac,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1q179d9d18599b798c37da2425b0144647f8ba2c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qd93ba126e23a395858e55cfaadc242f057852d,40,1,ip_cycling,ip_cycling: broadcast from 7 distinct IPs within 2h
+bc1q37c42c8e7e40070fdb4fd663a52e435f45566d,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qf6af3a64b6a19cf4fe7968377399abaae377c6,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qf25245d5d4d830889fa2a6528459f77c546040,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q1b3a409579466820befc454a9afd414686c0fc,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q531bb29657f1d7c00e72fc208d40baa3f6575f,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q60dce9f8464ee44b5ecb8f8475f99d248dcbdd,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q836726f1ca67ff4f16a46e983ad5ba6da37dda,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q141cc4bde7b0b1690b8996910c174a6db16189,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q11ada0d9323fa9a1a380f615c91199fa43f626,40,1,fan_in_consolidation,fan_in_consolidation: 10 distinct wallets funneled in within 72h
+bc1q76145edf44af17ff36cc7dc8a78a1db64d853c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7090d45a11ee4779b73ccd17af66463dfa3277,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1qa9732b55aaf1ce259181b8563aeee367ca728d,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q465ba5afa1139e1ee9daa69ed56c0f72f092d9,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q5c81939f6fde976e5b61ab0e672522a6d7d9aa,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1qa7ba1e25f94b19e9b4625a99a2b551ef81a535,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q8cb331332d3be67b7ca8a2e2c4fed1e0345212,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1q11841d6aa2282a9f90ba173cc440806bc3ace6,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qce3e33d5c16b2b193d466ad225187e57db2cba,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q47094429859ab6c81a31248c2221bb8753c524,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7dac00c0e926b679a88df3b0e05073674688e2,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1q185782d3304e1571f1c8ad4a4ecf46d203ed40,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q003633e7d82ee8f6a30e82107d8a63dcebf701,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q618a90cbc4e176c700083a1382fb9ed2629620,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q564774fc44e769e0b9ed941a72530fff004a14,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q9f91932c4fe846c6ff7aa327a0bb416201dc2d,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qedf233c87ed9fdc739d38a11bc2b6ea2dab05e,40,1,fan_out_structuring,fan_out_structuring: 20 outgoing transactions within 6h
+bc1q5dc97c6bb713352ab9ce009f06e32dd8014f46,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q3e8f8c0aaac80c4f1421dc952c51cb2e59aef1,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q775fa48ec4ada46251461123417d63e3086a3c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q2a47b62cec5591b874c6269da8c588c9c6776d,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q1e4de6c2f0b255ebf5d4a86c75fc79ff51b336,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q42acaf4c4577a3a6ea07d9fe6ab192de5a5da2,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qb8dc331b92678ff70d5487a6550a76e1c96931,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qd93329991752c9f9408f32a813976605e65010,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q4818405419c523624de8e6af3b4106df88f1b5,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1qa62def7f3c0a6e0cb50da78ed76f1de0a0ef07,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qffabfb05c6e290303ed28f394160a95342ebff,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qc76b261f1180dde7a548f09da2356ee7b9487f,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qc4505036eb325ac6af526ca8bd690e3145d927,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q4d5789c6f09778b1e22dc86184318a0d95fe61,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q41550eb181facccd493e28836379a3b419166f,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q56fec8a6f907790ff3d503e112a67a2ba8dacc,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q28e300a074a0c8cdb7486b3c45d8eb4a33a265,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q6819da6cc31e62d5a3972ca0fbfcded16e72df,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q2135bf1c528b8195b1694b2848ed5e67334cc3,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1q8c676add3fadc63f051b3d1a40685883889535,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q0ccb61206fd422f04fbdc2be0c256d614a1b2e,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1qa8003bb1c9dd0e83efc87042ab5bf4a9c7daf2,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q2bdc11a6aa56635a7da8d7c2ca7b1b9b8d3e4d,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qfd213f44b43c1fd74f4cee38e66343a5d05ebb,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q4ca42ae6e73473bcd5a31643ba69054fa34030,40,1,fan_out_structuring,fan_out_structuring: 24 outgoing transactions within 6h
+bc1q478637a20bf96d8ec6b97ea4421f59055f4fff,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q2bd9bf1c77bb5f94fa979d11f443bdb5156081,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1qa014351177ae4c1d63e4c3ee41ef53685796f8,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1q8554d2a4059d232f11ebbebbaa6f4203f632de,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q5ac549ef88704b9a596c543f14f72d5ce0912d,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q90e50bbbe5ffa2b41c666dabbe699540229e90,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q889dfeac9013aef7f6a4d25fb8722118548d79,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1qb5be0a02a1f36c75ea3ff182557d91b50342e1,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qdd11f40ce7c5da6f652f57bdddf7c3efab957b,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1q79cd34858ea30a64a369eb7258835667faff03,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q558f22184b3baea0978c146d51831026862ace,40,1,ip_cycling,ip_cycling: broadcast from 5 distinct IPs within 2h
+bc1q2596419eed84ab5f4dd05db6a8fb9b9fd4b166,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q00112188610ec95cc9933c6f62e3930daa6c07,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qce820a3823bcc95b46f9125e8a3f7e90c493dd,40,1,ip_cycling,ip_cycling: broadcast from 5 distinct IPs within 2h
+bc1q65e085fd9b54e4aaf44c7ebc6365478871528a,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1q9c9c6e9f3ed0cb513fc7dbcba9b9e6841e72be,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q0b7df1e0048d83a62c598a10bccf9c6c70b81c,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q140b2427d441fbdc73b63813b45d25f44d29b2,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q0a1b69337725435b8f334dadb948ee2ac858ee,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q841b04f551382b5b17014d256d3d1603584698,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1q4a27213e2ae81488ebc6842c7f34976d82ebef,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qce9799ed1f7db49a962021fb38e955aab170a6,40,1,fan_in_consolidation,fan_in_consolidation: 33 distinct wallets funneled in within 72h
+bc1q3e97ab0a9c7a6cefb4992752bb610681facae6,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q9e2b134b9839dab600495d709aa0a2ff7065f9,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q5617b467f7c4f3cd8f5245a9bcd816333f3268,40,1,fan_in_consolidation,fan_in_consolidation: 15 distinct wallets funneled in within 72h
+bc1q8a8af9b4fd693eb6136fdd7daaf2f490682507,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1qe4a2bd8a9eb34ec7b9a4c708f740b55a9496e9,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qb4ef9eb4019f8fada9ab0c94f55ec8a4069622,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qe7c9964fe1d06983692209ad9a28433d55b16a,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qf093a9bca6d03ec0972f8dd8689c0e010151e0,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qece86057cb0b62bbf74a4520da10dfc59b0497,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qa02933c2eb7214e8f3a578d47392a938cabad4,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q8b983267a6c2a05e1b26cf25a6a2d45414d811,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qee5bdfbcdba841b3144376ea7b777847689108,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q18cb7d67b812ba2cf812b6a0be42f011ab4a69,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q29a62fae6d88882129f94d62521fa0a941d902,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q700f1cb654374b195d32e3c6fadbee185cae48,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qd26251da3286dde80f2ef6a90242f7d6c688d1,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q125c7340510043699f1fef78e05cb5602e4195,40,1,peeling_chain,peeling_chain: part of a 11-hop wallet chain
+bc1q9528c456a145f3d804c3659b3090ba49d2a0ec,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q8119849b6bb23ef48afbb1a7ff1cb527159989,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qe8f754bac2ff59cecf0f3695a572d27c3c843d,40,1,fan_in_consolidation,fan_in_consolidation: 26 distinct wallets funneled in within 72h
+bc1q9913bc976dae3fb75c189e70e355eba7b2a17c,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1q8fba1527bcd9d00eed25671f061fe037bcafea,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q81c96bd95c1d2bd0de40197a5e2760ea429ec3,40,1,fan_in_consolidation,fan_in_consolidation: 11 distinct wallets funneled in within 72h
+bc1qcf4cd8c116d70f4551a3113f545f4455ba8276,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q3a8443d4a41951d262c47188c0ddda6e7e9f90,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1qba60d170f9ae66503d0b4c0181c154e72f51d4,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q19b374df080d86d34af97416c650f9303c6983,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qbbb5176b8321afe109a9f571d8789722b8ff2c,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q8fe0de70fe51a03b63267800cb25ec6a058021,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q8928f324b8fababec503047d434a1e21c241c9,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q06ac3c8cd4467af9b7a346faf6d9d0947ab7e5,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q1312d3f7f2fc1156be436efb523c894b099bc5,40,1,peeling_chain,peeling_chain: part of a 6-hop wallet chain
+bc1qe6f80c5d0a658a6e19eb45c84758c3ee1cbda7,40,1,peeling_chain,peeling_chain: part of a 15-hop wallet chain
+bc1q29131f63b442516606511e02ccbb4248afe6d5,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qfc9ac5c4f499ece203209b5576a93e7dc6814a,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qbe8a856d468387043195c914835de8ac508fa6,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qbde9b4bbd8711bfc03f3ac41beae84e89abba7,40,1,fan_in_consolidation,fan_in_consolidation: 15 distinct wallets funneled in within 72h
+bc1qe058fc6f3f014f27eb6749132544aa7d5bda8a,40,1,peeling_chain,peeling_chain: part of a 10-hop wallet chain
+bc1qeb293198117751cba294b9ed066b0b087f8817,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q0f50893a6ed796e0a56f2da2bbcabe01198ff3,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1qba02dd505dd546aecfcbf9e8b27958a33f3191,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q55ffbe7082db59cfcd8630ae4aadfc785026a3,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1qad60e94091b41138d69c0005814b921b5e0b13,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1qd1bfe0f7d66f174f81699abdf3505b142b4508,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q249e6a865ec87c3027f6b1ed379aebda536d57,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q18a590d292055793f6424c46ef69361d1d90c6,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q33f7ac757616ecbe793c0c2fcac93a1381c98a,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qf5bdfc22ecc0cf3dbbbb6e2ba7294711d651a5,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qc2bff4488cfe82c58d9bfe5e66d4de31b70feb,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q3b7868a57300c54ca56994e9f6416aae1af8cd,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1qa5ef2e6cc0484611ac686b97f762f761c12da9,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q56e57c179166a36201b3a23c1372c20ad17061,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q63dbd17d0668582bf7c0bc71af82fb7c92acd5,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q6e242cff8dbf529ea18ee605e41164754b8337,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qcb5bafa320dc83288f30232659097af81da609,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qb4031436f3c1c80910cc679c9a4bc049a2b8e6,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q509cf9ae5a2ccea8216be3a6484c28c665b0a7,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q1ea77f6bfa64b05b45597a531cc1835a16c210,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q99a03df6ddb3c77ec3472a68f69b19371ca25a,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q26bdc98300d19ef61f7f7a2df981af340ceb46,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qb289b8fd25cd49e5f1564bbfb33d594b369802,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q1d45ce068d57d1ca24734dc39f7f8b70eef3ef,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1qbd54465b1641051e834b3514fcec5c5b876430,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q5f47647ac9cf622db7851ccdb4393aef504721,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qa4394a7e8bd7397aff7f8e4e087f5070c67d4e,40,1,peeling_chain,peeling_chain: part of a 9-hop wallet chain
+bc1qae5d72829bc4a494d75964dfff18a493984206,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q89377b6981ad072e3a6ae02f01f4ee6171f993,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qc0d442458007f3c245809ab3177dd356475a02,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q79fc6119a2526236472b2d84f61a6c99f9fe8d,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1q6e7734ded0ab94f2c3f7dc495ad7e47f6c4d67,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1q73b9845210ea4f2c0299dcb1bac7b824f3e42b,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q2714273e1820f3b7a8249c8c32846a752f4dee,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qff7a156b65cc2e2bad38b87d0fa50b26fd9baa,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qa03ed57ee951fe311418530ac7ff25bc53c1d8,40,1,peeling_chain,peeling_chain: part of a 16-hop wallet chain
+bc1qa90f35f6c38f8c8dde618e172044d6f431b10b,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7cc6db7f79712b8ce9db02bc52cae25d717479,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q685a689b607c915214fe6f16f81ea90a46d410,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q49e36d23c966d63d2121875ec2332d499e7caf,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1q9c93ead1d7d8352b6a90ca30dcfa5579bf23ac,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q1659faa99ca209341d24e4831703a3ecc84344,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q1912a7e59d3d5c3e8f913857d4bbeab9afe96f,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1qed46595035eb5afbb8d0920fc5d1d24d5286b0,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 13 outputs
+bc1q8be3995857dd599a3a775dccd56294de588849,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q7ad4745bbc23b0927a3e7f03c9f38ffe868b00,40,1,peeling_chain,peeling_chain: part of a 12-hop wallet chain
+bc1q9fdf0671b977fbf2db169a1305f40d710c6c04,40,1,peeling_chain,peeling_chain: part of a 14-hop wallet chain
+bc1q147f215865a70d584f4d8d909445c28bc24425,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q3cf60f13002ebbd4d31b32a33e07f8054b917c,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1qa3e6c2af977da521b84bf8a01fca31ea40910a,40,1,fan_in_consolidation,fan_in_consolidation: 10 distinct wallets funneled in within 72h
+bc1q7eabf04c123c759831ea3c0f1528c5f7a768b0,40,1,peeling_chain,peeling_chain: part of a 8-hop wallet chain
+bc1qdc5d656957547859dcf85b9c7be6f821f2aa92,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 10 outputs
+bc1q648fa08adafac64ccdc4de3b51731803340700,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1qf208a927c527493761eaf2c8d87873068b3991,40,1,mixing,mixing: involved in a pooled transaction with 17 inputs / 8 outputs
+bc1qb9ffaefcfdad264f475ee9c3b7b69ebec52d0a,40,1,mixing,mixing: involved in a pooled transaction with 16 inputs / 8 outputs
+bc1q1e2f0243ee5a34c26613b3b552bd9367b844ab,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 19 outputs
+bc1q10e3be7437b385b0498826107b1f801bf48d8a,40,1,mixing,mixing: involved in a pooled transaction with 8 inputs / 9 outputs
+bc1q802f95124376adabcdaef210d1d4d633899638,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1qceaabcf7db26fd1c11e1e8e6af34a8753504fa,40,1,mixing,mixing: involved in a pooled transaction with 13 inputs / 16 outputs
+bc1q8aaedcc77e82537c873d586b91ec406680b974,40,1,mixing,mixing: involved in a pooled transaction with 14 inputs / 15 outputs
+bc1qbdd310f634428b92d23ffb205cd45a7f3073fd,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q33e35842ac67a8e71f4d2d31176f6e7af002d3,40,1,peeling_chain,peeling_chain: part of a 5-hop wallet chain
+bc1q10293308c2e2f5a570c42a87395ddfc3abc9cf,40,1,peeling_chain,peeling_chain: part of a 13-hop wallet chain
+bc1q43bf01896e6c5b5be04f36bdf6b299223c61a9,40,1,mixing,mixing: involved in a pooled transaction with 12 inputs / 15 outputs
+bc1q92ea50d779fb04cc7f66f0f7adafd4bd934425,40,1,peeling_chain,peeling_chain: part of a 7-hop wallet chain
+bc1q2b986c763172d533acdd052e43815584d4a298,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain
+bc1q6a1b2c54688467cd73fedf1e9cab23698db4e8,40,1,peeling_chain,peeling_chain: part of a 4-hop wallet chain

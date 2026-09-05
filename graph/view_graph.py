@@ -1,0 +1,397 @@
+#!/usr/bin/env python3
+"""
+Graph Viewer — Deep Ocean edition (Stage 3 output visual)
+--------------------------------------------------------------------------------
+Full graphs (tens of thousands of nodes) are unreadable rendered directly, so
+this script samples a manageable, meaningful subgraph and renders it as an
+interactive HTML file you can open in any browser (fully offline).
+
+Sampling strategy: takes the top N highest-degree wallets (the most
+interesting entities — likely hubs, collectors, mixers) plus everything
+directly connected to them (their transactions and counterparty IPs/wallets).
+
+New in this version:
+  - "Deep Ocean" color theme (navy background, cyan wallets, amber txns, teal IPs)
+  - Node size scaled by degree (bigger = more connected = visually stands out)
+  - Edge colors differentiated by relationship type (input / output / broadcast)
+  - Floating glass legend + live stats panel
+  - Search box to find and focus a specific wallet/txid/IP by (partial) id
+  - Click-to-highlight: clicking a node dims everything except its neighborhood
+  - Soft glow/shadow on nodes for a more polished look
+
+Usage:
+    python3 view_graph.py graph.graphml --top-wallets 15 --hops 1 --out graph_view.html
+
+Then open graph_view.html in your Windows browser:
+    explorer.exe graph_view.html      (run this from WSL)
+"""
+
+import argparse
+import json
+
+import networkx as nx
+from pyvis.network import Network
+
+# ---------------------------------------------------------------------------
+# Deep Ocean theme
+# ---------------------------------------------------------------------------
+BG_COLOR = "#071021"          # near-black navy
+PANEL_BG = "rgba(9, 22, 43, 0.88)"
+PANEL_BORDER = "rgba(79, 209, 197, 0.35)"
+TEXT_COLOR = "#DCEFF2"
+ACCENT = "#4FD1C5"            # teal accent for headings/glow
+
+COLOR_MAP = {
+    "wallet": "#4FC3F7",       # electric cyan-blue
+    "transaction": "#FFB300",  # amber/gold
+    "ip": "#2ED9A0",           # sea-green / teal
+}
+GLOW_MAP = {
+    "wallet": "rgba(79,195,247,0.55)",
+    "transaction": "rgba(255,179,0,0.5)",
+    "ip": "rgba(46,217,160,0.5)",
+}
+BASE_SIZE = {
+    "wallet": 16,
+    "transaction": 9,
+    "ip": 13,
+}
+EDGE_COLOR = {
+    "input_to": "#6FA8DC",     # cool blue — money flowing into a tx
+    "output_to": "#FFD37A",    # warm amber — money flowing out of a tx
+    "broadcasts": "#3FE0C0",   # teal — IP broadcast link
+}
+HUB_BORDER = "#FF5F5F"         # coral-red ring for flagged hub wallets
+
+
+def sample_subgraph(G, top_n_wallets, hops=1, max_nodes=450):
+    """
+    Samples around the top-degree wallets. Defaults to 1-hop expansion and a
+    node cap -- a 2-hop expansion on a real-sized graph can balloon into
+    thousands of nodes, which makes the browser's physics simulation crawl.
+    max_nodes is intentionally roomier than before so the sample reads as a
+    dense, "alive" network rather than a sparse skeleton, while still loading
+    in a few seconds.
+    """
+    wallet_degrees = [(n, G.degree(n)) for n, d in G.nodes(data=True) if d.get("node_type") == "wallet"]
+    wallet_degrees.sort(key=lambda x: x[1], reverse=True)
+    top_wallets = [w for w, _ in wallet_degrees[:top_n_wallets]]
+
+    nodes_to_keep = set(top_wallets)
+    frontier = set(top_wallets)
+    for _ in range(hops):
+        next_frontier = set()
+        for w in frontier:
+            next_frontier.update(nx.all_neighbors(G, w))
+        nodes_to_keep.update(next_frontier)
+        frontier = next_frontier
+        if len(nodes_to_keep) >= max_nodes:
+            break
+
+    if len(nodes_to_keep) > max_nodes:
+        # Stratified trim: plain degree-ranking starves low-degree node
+        # types (IPs almost always have degree 1, since each only
+        # broadcasts one transaction) so they'd vanish entirely from the
+        # sample. Instead, reserve a minimum share of the budget for each
+        # node type, then fill the rest with the highest-degree remainder.
+        by_type = {"wallet": [], "transaction": [], "ip": [], "unknown": []}
+        for n in nodes_to_keep:
+            t = G.nodes[n].get("node_type", "unknown")
+            by_type.setdefault(t, []).append(n)
+        for t in by_type:
+            by_type[t].sort(key=lambda n: G.degree(n), reverse=True)
+
+        kept = set(top_wallets)
+        min_reserve = {"wallet": max_nodes, "transaction": int(max_nodes * 0.45), "ip": int(max_nodes * 0.15)}
+        for t, ranked_nodes in by_type.items():
+            reserve = min_reserve.get(t, int(max_nodes * 0.1))
+            for n in ranked_nodes:
+                if len(kept) >= max_nodes:
+                    break
+                if n in kept:
+                    continue
+                kept.add(n)
+                reserve -= 1
+                if reserve <= 0:
+                    break
+
+        # top up with whatever highest-degree nodes remain, if under budget
+        if len(kept) < max_nodes:
+            remainder = sorted(nodes_to_keep - kept, key=lambda n: G.degree(n), reverse=True)
+            kept.update(remainder[: max_nodes - len(kept)])
+
+        nodes_to_keep = kept
+
+    return G.subgraph(nodes_to_keep).copy(), set(top_wallets)
+
+
+def render(G_full, G_sub, highlighted, out_path):
+    net = Network(height="880px", width="100%", directed=True,
+                  bgcolor=BG_COLOR, font_color=TEXT_COLOR)
+
+    # forceAtlas2Based tends to produce tighter, more organic hub-and-spoke
+    # clusters than barnesHut, which reads as "denser" and more deliberate
+    # for a demo audience, while still settling quickly.
+    net.force_atlas_2based(gravity=-45, central_gravity=0.012,
+                            spring_length=95, spring_strength=0.06,
+                            damping=0.75, overlap=0.3)
+
+    degrees = dict(G_sub.degree())
+    max_deg = max(degrees.values()) if degrees else 1
+
+    type_counts = {"wallet": 0, "transaction": 0, "ip": 0}
+
+    for node, data in G_sub.nodes(data=True):
+        ntype = data.get("node_type", "unknown")
+        type_counts[ntype] = type_counts.get(ntype, 0) + 1
+        color = COLOR_MAP.get(ntype, "#CCCCCC")
+        glow = GLOW_MAP.get(ntype, "rgba(200,200,200,0.4)")
+        is_hub = node in highlighted
+
+        # size scales gently with degree so hubs visually pop without
+        # dwarfing everything else
+        deg_boost = (degrees.get(node, 0) / max_deg) * 14
+        size = BASE_SIZE.get(ntype, 10) + deg_boost
+
+        border = HUB_BORDER if is_hub else color
+        label = str(node)[:10] + "…" if ntype != "ip" else str(node)
+        title_lines = [f"type: {ntype}", f"degree (in sample): {degrees.get(node, 0)}"]
+        for k, v in data.items():
+            if k != "node_type":
+                title_lines.append(f"{k}: {v}")
+        title = "\n".join(title_lines)
+
+        # NOTE: deliberately no "group" kwarg here. vis-network can assign
+        # its own auto-palette colors to grouped nodes in some situations,
+        # which is what caused wallets/transactions to render with swapped
+        # colors previously. Every node's color is set explicitly instead,
+        # so there's no ambiguity about which type gets which color.
+        net.add_node(
+            node, label=label, title=title, shape="dot", color={
+                "background": color, "border": border,
+                "highlight": {"background": color, "border": HUB_BORDER},
+                "hover": {"background": color, "border": ACCENT},
+            },
+            size=size,
+            borderWidth=4 if is_hub else 1.5,
+            borderWidthSelected=6,
+            shadow={"enabled": True, "color": glow, "size": 18 if is_hub else 10, "x": 0, "y": 0},
+        )
+
+    for u, v, data in G_sub.edges(data=True):
+        etype = data.get("edge_type", "")
+        edge_label = f"{data['amount']:.4f} BTC" if "amount" in data else ""
+        e_color = EDGE_COLOR.get(etype, "#5A6B85")
+        net.add_edge(u, v, title=etype, label=edge_label, arrows="to",
+                     color={"color": e_color, "highlight": ACCENT, "opacity": 0.55},
+                     smooth={"type": "continuous", "roundness": 0.25})
+
+    net.set_options("""
+    {
+      "nodes": {"font": {"size": 12, "face": "Segoe UI, sans-serif"}},
+      "edges": {"font": {"size": 8, "align": "middle", "color": "#9FB3C8", "strokeWidth": 0},
+                "color": {"inherit": false}, "smooth": true},
+      "interaction": {"hover": true, "tooltipDelay": 120, "hideEdgesOnDrag": true},
+      "physics": {
+        "stabilization": {"iterations": 120, "fit": true},
+        "forceAtlas2Based": {"avoidOverlap": 0.3}
+      },
+      "layout": {"improvedLayout": true}
+    }
+    """)
+
+    net.write_html(out_path, notebook=False)
+
+    with open(out_path, "r") as f:
+        html = f.read()
+
+    stats_json = json.dumps({
+        "full_nodes": G_full.number_of_nodes(),
+        "full_edges": G_full.number_of_edges(),
+        "sample_nodes": G_sub.number_of_nodes(),
+        "sample_edges": G_sub.number_of_edges(),
+        "wallets": type_counts.get("wallet", 0),
+        "transactions": type_counts.get("transaction", 0),
+        "ips": type_counts.get("ip", 0),
+        "hubs": len(highlighted),
+    })
+
+    overlay = f"""
+    <style>
+      body {{ margin: 0; background: {BG_COLOR}; }}
+      #mynetwork {{ background: radial-gradient(circle at 50% 30%, #0d1c33 0%, {BG_COLOR} 70%); }}
+
+      .trinetra-panel {{
+        position: fixed; z-index: 999; background: {PANEL_BG};
+        border: 1px solid {PANEL_BORDER}; border-radius: 12px;
+        color: {TEXT_COLOR}; font-family: 'Segoe UI', sans-serif;
+        backdrop-filter: blur(6px); box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+      }}
+
+      #trinetra-title {{
+        top: 18px; left: 18px; padding: 10px 20px; display: flex; align-items: center; gap: 12px;
+      }}
+      #trinetra-eye-logo {{ flex-shrink: 0; filter: drop-shadow(0 0 6px rgba(79,209,197,0.55)); }}
+      #trinetra-title h1 {{
+        margin: 0; font-size: 18px; font-weight: 600;
+        background: linear-gradient(90deg, {ACCENT}, #4FC3F7);
+        -webkit-background-clip: text; background-clip: text; color: transparent;
+        letter-spacing: 0.5px;
+      }}
+      #trinetra-title p {{ margin: 2px 0 0; font-size: 11px; color: #8FA5BC; letter-spacing: 0.5px; }}
+
+      #trinetra-legend {{
+        bottom: 18px; left: 18px; padding: 14px 18px; min-width: 210px;
+      }}
+      #trinetra-legend h3 {{ margin: 0 0 8px; font-size: 12px; color: {ACCENT}; text-transform: uppercase; letter-spacing: 1px; }}
+      .legend-row {{ display: flex; align-items: center; gap: 8px; font-size: 13px; margin: 5px 0; }}
+      .legend-dot {{ width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }}
+      .legend-dot.hub {{ border: 2px solid {HUB_BORDER}; width: 8px; height: 8px; background: transparent; }}
+
+      #trinetra-stats {{
+        top: 18px; right: 18px; padding: 14px 18px; min-width: 190px; font-size: 12px;
+      }}
+      #trinetra-stats h3 {{ margin: 0 0 8px; font-size: 12px; color: {ACCENT}; text-transform: uppercase; letter-spacing: 1px; }}
+      .stat-row {{ display: flex; justify-content: space-between; margin: 3px 0; color: #B9CBDC; }}
+      .stat-row b {{ color: {TEXT_COLOR}; }}
+
+      #trinetra-search {{
+        bottom: 18px; right: 18px; padding: 12px 16px; display: flex; gap: 8px; align-items: center;
+      }}
+      #trinetra-search input {{
+        background: #0c1c33; border: 1px solid {PANEL_BORDER}; border-radius: 6px;
+        color: {TEXT_COLOR}; padding: 6px 10px; font-size: 12px; width: 170px; outline: none;
+      }}
+      #trinetra-search button {{
+        background: {ACCENT}; border: none; border-radius: 6px; color: #06131F;
+        font-weight: 600; padding: 6px 12px; font-size: 12px; cursor: pointer;
+      }}
+      #trinetra-search button:hover {{ filter: brightness(1.1); }}
+      #trinetra-hint {{ font-size: 10px; color: #708196; margin-top: 4px; }}
+    </style>
+
+    <div class="trinetra-panel" id="trinetra-title">
+      <svg id="trinetra-eye-logo" width="36" height="36" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 32 C 14 12, 50 12, 60 32 C 50 52, 14 52, 4 32 Z"
+              fill="none" stroke="{ACCENT}" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="32" cy="32" r="15" fill="#06131F" stroke="{ACCENT}" stroke-width="2"/>
+        <circle cx="32" cy="32" r="15" fill="none" stroke="{COLOR_MAP['transaction']}" stroke-width="1" opacity="0.6"/>
+        <text x="32" y="38" font-size="17" text-anchor="middle" font-family="Segoe UI, sans-serif"
+              font-weight="700" fill="{COLOR_MAP['transaction']}">&#8383;</text>
+      </svg>
+      <div>
+        <h1>Trinetra &mdash; Entity Graph</h1>
+        <p>Team = Quantum Minds</p>
+      </div>
+    </div>
+
+    <div class="trinetra-panel" id="trinetra-legend">
+      <h3>Legend</h3>
+      <div class="legend-row"><span class="legend-dot" style="background:{COLOR_MAP['wallet']}"></span> Wallets (Bitcoin addresses)</div>
+      <div class="legend-row"><span class="legend-dot" style="background:{COLOR_MAP['transaction']}"></span> Transactions (single TXID)</div>
+      <div class="legend-row"><span class="legend-dot" style="background:{COLOR_MAP['ip']}"></span> IP addresses (who broadcast it)</div>
+      <div class="legend-row"><span class="legend-dot hub"></span> Coral ring = flagged hub wallet</div>
+    </div>
+
+    <div class="trinetra-panel" id="trinetra-stats">
+      <h3>Sample Stats</h3>
+      <div class="stat-row"><span>Wallets</span><b id="st-wallets">-</b></div>
+      <div class="stat-row"><span>Transactions</span><b id="st-txns">-</b></div>
+      <div class="stat-row"><span>IPs</span><b id="st-ips">-</b></div>
+      <div class="stat-row"><span>Hub wallets</span><b id="st-hubs">-</b></div>
+      <div class="stat-row"><span>Sampled nodes</span><b id="st-sn">-</b></div>
+      <div class="stat-row"><span>Full graph nodes</span><b id="st-fn">-</b></div>
+    </div>
+
+    <div class="trinetra-panel" id="trinetra-search">
+      <div>
+        <input id="trinetra-search-input" type="text" placeholder="Find wallet / txid / IP..." />
+        <div id="trinetra-hint">Enter = focus &amp; highlight</div>
+      </div>
+      <button onclick="trinetraSearch()">Go</button>
+    </div>
+
+    <script type="text/javascript">
+      var TRINETRA_STATS = {stats_json};
+      document.getElementById('st-wallets').innerText = TRINETRA_STATS.wallets;
+      document.getElementById('st-txns').innerText = TRINETRA_STATS.transactions;
+      document.getElementById('st-ips').innerText = TRINETRA_STATS.ips;
+      document.getElementById('st-hubs').innerText = TRINETRA_STATS.hubs;
+      document.getElementById('st-sn').innerText = TRINETRA_STATS.sample_nodes + ' / ' + TRINETRA_STATS.sample_edges + ' edges';
+      document.getElementById('st-fn').innerText = TRINETRA_STATS.full_nodes + ' / ' + TRINETRA_STATS.full_edges + ' edges';
+
+      network.once("stabilizationIterationsDone", function () {{
+        network.setOptions({{ physics: false }});
+      }});
+
+      var allNodeIds = nodes.getIds();
+      var allEdgeIds = edges.getIds();
+
+      function trinetraResetHighlight() {{
+        nodes.update(allNodeIds.map(id => ({{ id: id, opacity: 1 }})));
+      }}
+
+      function trinetraHighlightNeighborhood(nodeId) {{
+        var connected = new Set(network.getConnectedNodes(nodeId));
+        connected.add(nodeId);
+        var updates = allNodeIds.map(function (id) {{
+          return {{ id: id, opacity: connected.has(id) ? 1 : 0.12 }};
+        }});
+        nodes.update(updates);
+      }}
+
+      network.on("click", function (params) {{
+        if (params.nodes.length > 0) {{
+          trinetraHighlightNeighborhood(params.nodes[0]);
+        }} else {{
+          trinetraResetHighlight();
+        }}
+      }});
+
+      function trinetraSearch() {{
+        var q = document.getElementById('trinetra-search-input').value.trim().toLowerCase();
+        if (!q) return;
+        var match = allNodeIds.find(id => String(id).toLowerCase().indexOf(q) !== -1);
+        if (match) {{
+          trinetraHighlightNeighborhood(match);
+          network.focus(match, {{ scale: 1.6, animation: {{ duration: 600, easingFunction: "easeInOutQuad" }} }});
+          network.selectNodes([match]);
+        }}
+      }}
+      document.getElementById('trinetra-search-input').addEventListener('keydown', function (e) {{
+        if (e.key === 'Enter') trinetraSearch();
+      }});
+    </script>
+    """
+
+    html = html.replace("</body>", overlay + "</body>")
+    with open(out_path, "w") as f:
+        f.write(html)
+
+    print(f"Interactive graph written to: {out_path}")
+    print("Node colors: cyan=wallet, amber=transaction, teal=IP")
+    print("Coral-ring nodes = the top-degree 'hub' wallets used for sampling")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Render a Deep Ocean-themed interactive view of the entity graph.")
+    parser.add_argument("graphml_file", help="Path to graph.graphml (Stage 3 output)")
+    parser.add_argument("--top-wallets", type=int, default=15, help="Number of top-degree wallets to sample around")
+    parser.add_argument("--hops", type=int, default=1, help="Neighbor expansion depth (1 = fast/presentable, 2 = denser)")
+    parser.add_argument("--max-nodes", type=int, default=450, help="Hard cap on total rendered nodes")
+    parser.add_argument("--out", default="graph_view.html", help="Output HTML path")
+    args = parser.parse_args()
+
+    print(f"Loading: {args.graphml_file}")
+    G = nx.read_graphml(args.graphml_file)
+    print(f"  Full graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+
+    print(f"Sampling subgraph around top {args.top_wallets} highest-degree wallets...")
+    G_sub, highlighted = sample_subgraph(G, args.top_wallets, hops=args.hops, max_nodes=args.max_nodes)
+    print(f"  Sampled subgraph: {G_sub.number_of_nodes()} nodes, {G_sub.number_of_edges()} edges")
+
+    render(G, G_sub, highlighted, args.out)
+
+
+if __name__ == "__main__":
+    main()
