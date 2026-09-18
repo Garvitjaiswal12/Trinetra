@@ -135,7 +135,7 @@ def print_summary(G):
     # Top wallets by degree — a quick sanity view of the busiest entities
     wallet_degrees = [(n, G.degree(n)) for n, d in G.nodes(data=True) if d.get("node_type") == "wallet"]
     wallet_degrees.sort(key=lambda x: x[1], reverse=True)
-    print("\nTop 5 most-connected wallets (possible hubs — mixers, collectors, exchanges):")
+    print("\nTop 5 most-connected wallets :")
     for wallet, deg in wallet_degrees[:5]:
         print(f"  {wallet}  (degree={deg})")
 

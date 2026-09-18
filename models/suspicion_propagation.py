@@ -27,12 +27,46 @@ import networkx as nx
 import pandas as pd
 
 
-def build_seed_weights(alerts_df, threshold):
+def build_seed_weights(alerts_df, threshold, graph_nodes):
     """High-confidence wallets become PageRank's personalization seeds,
-    weighted by their own confidence score."""
+    weighted by their own confidence score.
+
+    Only seeds whose wallet ID actually exists in the graph can be used --
+    personalized PageRank silently produces garbage (or a ZeroDivisionError,
+    if ALL seeds are missing) when personalization mass is placed on nodes
+    that aren't in the graph. We filter to graph-present seeds and report
+    the match rate loudly, since a low match rate usually means the alerts
+    file and the graph were built from mismatched wallet-ID representations
+    upstream -- a data bug worth fixing at the source, not silently masking.
+    """
     seeds = alerts_df[alerts_df["combined_confidence"] >= threshold]
     if len(seeds) == 0:
         return {}
+
+    seed_ids = set(seeds["wallet"])
+    matched_ids = seed_ids & graph_nodes
+    missing_ids = seed_ids - graph_nodes
+
+    match_rate = len(matched_ids) / len(seed_ids) if seed_ids else 0.0
+    print(f"Seed/graph ID match: {len(matched_ids)}/{len(seed_ids)} "
+          f"({match_rate:.1%}) of seed wallets found in graph")
+
+    if missing_ids:
+        sample = list(missing_ids)[:5]
+        print(f"  WARNING: {len(missing_ids)} seed wallet(s) not found in graph "
+              f"and will be EXCLUDED from propagation. Sample missing IDs: {sample}")
+        if match_rate < 0.5:
+            print("  WARNING: less than half of seeds matched the graph -- this usually "
+                  "means final_alerts.csv and graph.graphml were built from mismatched "
+                  "wallet-ID representations upstream (e.g. a different address encoding, "
+                  "checksum, or case-normalization step). Propagation results below may be "
+                  "based on a small/biased subset of intended seeds. Investigate the "
+                  "upstream pipeline stages before trusting these results.")
+
+    seeds = seeds[seeds["wallet"].isin(matched_ids)]
+    if len(seeds) == 0:
+        return {}
+
     total = seeds["combined_confidence"].sum()
     return {row["wallet"]: row["combined_confidence"] / total for _, row in seeds.iterrows()}
 
@@ -67,10 +101,13 @@ def main():
     print(f"Loading alerts: {args.alerts}")
     alerts = pd.read_csv(args.alerts)
 
-    seed_weights = build_seed_weights(alerts, args.seed_threshold)
+    graph_node_ids = set(G.nodes())
+    seed_weights = build_seed_weights(alerts, args.seed_threshold, graph_node_ids)
     print(f"Seed wallets (confidence >= {args.seed_threshold}): {len(seed_weights)}")
     if not seed_weights:
-        print("No seeds found at this threshold -- lower --seed-threshold and retry.")
+        print("No usable seeds found at this threshold -- either lower --seed-threshold, "
+              "or (if the match-rate warning above fired) fix the upstream wallet-ID "
+              "mismatch between final_alerts.csv and graph.graphml first.")
         return
 
     print(f"Running personalized PageRank (alpha={args.alpha})...")
@@ -98,15 +135,11 @@ def main():
 
     result[["wallet", "propagated_suspicion_0_100"]].to_csv(args.out, index=False)
 
-    print(f"\nTop 10 wallets by propagated suspicion (none of these matched a rule directly):")
+    print(f"\nTop 10 wallets by propagated suspicion :")
     for _, row in result.head(10).iterrows():
-        print(f"  {row['wallet'][:20]}...  propagated_score={row['propagated_suspicion_0_100']:.2f}")
+        print(f"  {row['wallet']}  propagated_score={row['propagated_suspicion_0_100']:.2f}")
 
     print(f"\nWritten to: {args.out}")
-    print("\nThese wallets carry no direct rule match but sit close in the graph to")
-    print("confirmed high-confidence flags -- worth investigator review as potential")
-    print("'integration stage' wallets (laundering's final, deliberately-clean-looking hop).")
-
-
+    
 if __name__ == "__main__":
     main()

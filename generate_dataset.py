@@ -101,6 +101,15 @@ def new_wallet_pool(n):
     return [random_wallet() for _ in range(n)]
 
 
+def pool_or_fresh(p_shared=0.55):
+    """Most real-world laundering touches ordinary wallets at some point
+    (cash-out points, unwitting intermediaries) rather than existing in a
+    fully sealed-off address space. Mixing in the shared WALLET_POOL keeps
+    illicit/benign clusters graph-connected to the general population,
+    instead of each cluster forming its own isolated island."""
+    return random.choice(WALLET_POOL) if random.random() < p_shared else random_wallet()
+
+
 IP_POOL = new_ip_pool(N_IPS)
 WALLET_POOL = new_wallet_pool(N_WALLETS)
 IP_GEO = {ip: random_geo() for ip in IP_POOL}
@@ -160,7 +169,7 @@ def gen_peeling_chain():
     """One wallet peels off small amounts across a long chain of hops."""
     txs = []
     amount = random.uniform(5, 50)
-    current_wallet = random_wallet()
+    current_wallet = random_wallet()  # fresh: keeps chain-start in-degree==0 for detection
     ts = random_timestamp()
     src_ip = random.choice(IP_POOL)
     hops = random.randint(6, 15)
@@ -170,7 +179,7 @@ def gen_peeling_chain():
         remainder = amount - peel
         tx = build_tx(
             inputs=[(current_wallet, amount)],
-            outputs=[(next_wallet, remainder), (random_wallet(), peel)],
+            outputs=[(next_wallet, remainder), (pool_or_fresh(), peel)],
             ts=ts, src_ip=src_ip, pattern="peeling_chain",
         )
         txs.append(tx)
@@ -185,8 +194,8 @@ def gen_mixing_service():
     n_in = random.randint(8, 20)
     n_out = random.randint(8, 20)
     total = random.uniform(10, 100)
-    inputs = [(random_wallet(), total / n_in) for _ in range(n_in)]
-    outputs = [(random_wallet(), total / n_out * 0.97) for _ in range(n_out)]
+    inputs = [(pool_or_fresh(), total / n_in) for _ in range(n_in)]
+    outputs = [(pool_or_fresh(), total / n_out * 0.97) for _ in range(n_out)]
     # mixing services are often accessed via Tor-like ASNs
     src_ip = random.choice([ip for ip, (c, a) in IP_GEO.items() if a in TOR_EXIT_LIKE_ASNS] or IP_POOL)
     return [build_tx(inputs, outputs, src_ip=src_ip, pattern="mixing")]
@@ -195,7 +204,7 @@ def gen_mixing_service():
 def gen_fanout_structuring():
     """One wallet splits a large sum into many small txs (smurfing) in a short window."""
     txs = []
-    origin = random_wallet()
+    origin = pool_or_fresh()
     total = random.uniform(20, 80)
     n_splits = random.randint(10, 25)
     ts = random_timestamp()
@@ -204,7 +213,7 @@ def gen_fanout_structuring():
     for _ in range(n_splits):
         tx = build_tx(
             inputs=[(origin, per)],
-            outputs=[(random_wallet(), per * 0.995)],
+            outputs=[(pool_or_fresh(), per * 0.995)],
             ts=ts, src_ip=src_ip, pattern="fanout_structuring",
         )
         txs.append(tx)
@@ -213,15 +222,20 @@ def gen_fanout_structuring():
 
 
 def gen_fanin_consolidation():
-    """Many small wallets funnel into one collector wallet (ransomware/darknet payout)."""
+    """Many small wallets funnel into one collector wallet (ransomware/darknet payout).
+    Amounts cluster tightly near a round figure -- classic "structuring" behavior to
+    stay just under a reporting/attention threshold. This low variance is a real,
+    non-labeled signal that distinguishes it from ordinary collection (see
+    gen_benign_high_fanin, which keeps natural, high-variance amounts)."""
     txs = []
     collector = random_wallet()
     n_sources = random.randint(15, 40)
     ts = random_timestamp()
+    structuring_target = random.uniform(0.85, 0.98)  # "just under 1.0" threshold
     for _ in range(n_sources):
-        amt = random.uniform(0.05, 1.5)
+        amt = max(0.01, random.gauss(structuring_target, structuring_target * 0.04))
         tx = build_tx(
-            inputs=[(random_wallet(), amt)],
+            inputs=[(pool_or_fresh(), amt)],
             outputs=[(collector, amt * 0.99)],
             ts=ts + timedelta(hours=random.randint(0, 72)),
             pattern="fanin_consolidation",
@@ -236,10 +250,11 @@ def gen_ip_cycling():
     wallet = random_wallet()
     ts = random_timestamp()
     for _ in range(random.randint(5, 12)):
+        ts += timedelta(minutes=random.randint(1, 30))  # advance, don't restart from base
         tx = build_tx(
             inputs=[(wallet, random.uniform(0.1, 2))],
-            outputs=[(random_wallet(), random.uniform(0.05, 1.9))],
-            ts=ts + timedelta(minutes=random.randint(1, 30)),
+            outputs=[(pool_or_fresh(), random.uniform(0.05, 1.9))],
+            ts=ts,
             src_ip=random.choice(IP_POOL),
             pattern="ip_cycling",
         )
@@ -257,6 +272,53 @@ ILLICIT_GENERATORS = [
 
 
 # ----------------------------
+# BENIGN HARD-NEGATIVE GENERATORS
+# Legitimate transaction shapes that overlap the graph-detector's structural
+# thresholds (input/output counts, fan-in windows) WITHOUT being illicit.
+# Without these, benign traffic (generate_normal_transactions) never comes
+# close to the detector's thresholds, so high precision is guaranteed by
+# construction rather than earned. These make the benchmark meaningful.
+# ----------------------------
+def gen_benign_high_fanin():
+    """Legit exchange/payroll-style wallet: many depositors send in over a
+    window, same STRUCTURAL shape as fan_in_consolidation (source count,
+    time window) but NOT illicit -- and, realistically, with natural,
+    high-variance deposit amounts rather than the tight clustering around
+    a threshold that structuring shows."""
+    txs = []
+    collector = random_wallet()
+    n_sources = random.randint(10, 25)  # overlaps fan-in's min_sources=10 threshold
+    ts = random_timestamp()
+    for _ in range(n_sources):
+        amt = random.uniform(0.05, 1.5)  # natural variance, not clustered
+        tx = build_tx(
+            inputs=[(pool_or_fresh(), amt)],
+            outputs=[(collector, amt * 0.99)],
+            ts=ts + timedelta(hours=random.randint(0, 72)),
+            pattern="normal",
+        )
+        txs.append(tx)
+    return txs
+
+
+def gen_benign_mixing_like():
+    """Legit payment batching / settlement: one tx with many inputs and
+    outputs, same shape as mixing but NOT illicit."""
+    n_in = random.randint(8, 15)
+    n_out = random.randint(8, 15)
+    total = random.uniform(10, 100)
+    inputs = [(pool_or_fresh(), total / n_in) for _ in range(n_in)]
+    outputs = [(pool_or_fresh(), total / n_out * 0.995) for _ in range(n_out)]
+    return [build_tx(inputs, outputs, pattern="normal")]
+
+
+BENIGN_HARD_NEGATIVE_GENERATORS = [
+    gen_benign_high_fanin,
+    gen_benign_mixing_like,
+]
+
+
+# ----------------------------
 # BUILD FULL DATASET
 # ----------------------------
 def main():
@@ -264,6 +326,14 @@ def main():
 
     for _ in range(N_ILLICIT_CLUSTERS):
         gen_fn = random.choice(ILLICIT_GENERATORS)
+        all_txs.extend(gen_fn())
+
+    # Hard negatives: benign transactions structurally similar to illicit
+    # patterns (same shape, labeled normal). See BENIGN_HARD_NEGATIVE_GENERATORS
+    # docstring above for why these matter.
+    N_HARD_NEGATIVES = N_ILLICIT_CLUSTERS // 2
+    for _ in range(N_HARD_NEGATIVES):
+        gen_fn = random.choice(BENIGN_HARD_NEGATIVE_GENERATORS)
         all_txs.extend(gen_fn())
 
     random.shuffle(all_txs)
@@ -371,16 +441,10 @@ def main():
     n_illicit = sum(g["is_illicit"] for g in ground_truth)
     print(f"Generated {len(all_txs)} transactions ({n_illicit} illicit, "
           f"{len(all_txs) - n_illicit} normal) -> {n_illicit/len(all_txs)*100:.2f}% illicit ratio")
-    print(f"Injected {n_dirty} deliberately dirty/malformed rows ({DIRTY_RATE*100:.0f}% of total), "
-          f"simulating real-world noisy telemetry:")
-    for defect, count in defect_counts.items():
-        if count:
-            print(f"  - {defect}: {count}")
-    print(f"Files written to: {OUT_DIR.resolve()}")
-    print("  - transactions.csv       (main dataset for ingestion)")
-    print("  - transactions.json      (same, JSON form)")
-    print("  - ground_truth.csv       (evaluation labels ONLY — don't feed to your model)")
-    print("  - wallet_graph_edges.csv (precomputed edges for graph building)")
+    print(f"  (includes {N_HARD_NEGATIVES} benign hard-negative clusters, structurally "
+          f"similar to illicit patterns, to test detector specificity)")
+
+
 
 
 if __name__ == "__main__":

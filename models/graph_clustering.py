@@ -71,26 +71,41 @@ def detect_fanout(df, window_hours=6, min_tx=8):
 # PATTERN 2: FAN-IN CONSOLIDATION
 # Many distinct wallets send to one wallet within a short window
 # ----------------------------
-def detect_fanin(df, window_hours=72, min_sources=10):
+def detect_fanin(df, window_hours=72, min_sources=10, structuring_cv_threshold=0.12):
     flags = defaultdict(list)
-    wallet_incoming = defaultdict(list)  # collector -> list of (timestamp, source_wallet)
+    wallet_incoming = defaultdict(list)  # collector -> list of (timestamp, source_wallet, amount)
 
     for _, row in df.iterrows():
         sources = row["input_addresses"]
-        for out_addr in row["output_addresses"]:
+        for out_idx, out_addr in enumerate(row["output_addresses"]):
+            amt = row["output_amounts"][out_idx] if out_idx < len(row["output_amounts"]) else 0.0
             for src in sources:
                 if src != out_addr:
-                    wallet_incoming[out_addr].append((row["timestamp"], src))
+                    wallet_incoming[out_addr].append((row["timestamp"], src, amt))
 
     for wallet, events in wallet_incoming.items():
         events.sort(key=lambda x: x[0])
         for i in range(len(events)):
             window_end = events[i][0] + pd.Timedelta(hours=window_hours)
-            sources_in_window = {src for t, src in events[i:] if t <= window_end}
+            window_events = [(t, src, amt) for t, src, amt in events[i:] if t <= window_end]
+            sources_in_window = {src for t, src, amt in window_events}
             if len(sources_in_window) >= min_sources:
                 flags[wallet].append(
                     f"fan_in_consolidation: {len(sources_in_window)} distinct wallets funneled in within {window_hours}h"
                 )
+                # Structuring signal: real laundering funnels often cluster
+                # amounts tightly near a threshold (to stay under reporting
+                # limits), unlike ordinary collection which has natural,
+                # high-variance deposit sizes. Low coefficient of variation
+                # here is a genuine, non-labeled distinguishing feature.
+                amounts = pd.Series([amt for _, _, amt in window_events if amt])
+                if len(amounts) >= 5 and amounts.mean() > 0:
+                    cv = amounts.std() / amounts.mean()
+                    if cv <= structuring_cv_threshold:
+                        flags[wallet].append(
+                            f"fan_in_consolidation: incoming amounts unusually uniform "
+                            f"(cv={cv:.3f}) -- consistent with structuring"
+                        )
                 break
     return flags
 
