@@ -10,7 +10,7 @@
 **Problem Statement ID:** 26146  
 **Problem Statement Title:** AI-Powered Monitoring & Analysis of Bitcoin Transaction Traffic  
 **Organization:** National Technical Research Organisation (NTRO)  
-**Category:** Softwareeee
+**Category:** Software
 
 ---
 
